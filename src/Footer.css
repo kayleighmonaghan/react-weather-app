@@ -1,0 +1,8 @@
+.Footer small {
+  padding-top: 12px;
+  font-weight: lighter;
+}
+.Footer a:hover {
+  color: #231816;
+  text-decoration: none;
+}

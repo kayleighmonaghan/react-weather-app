@@ -1,0 +1,27 @@
+.Forecast h3 {
+  color: #bababa;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+.Forecast .week-day {
+  padding-left: 25px;
+  text-align: left;
+}
+.Forecast .week-temp {
+  padding-right: 25px;
+  text-align: right;
+}
+.Forecast .week-img {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: -16px;
+  top: -5px;
+}
+
+.Forecast h3 strong {
+  font-weight: 500;
+  color: #9b9b9b;
+}
