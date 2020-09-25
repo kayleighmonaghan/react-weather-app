@@ -1,6 +1,4 @@
 import React from "react";
-import "./index.css";
-import "./App.css";
 import Form from "./Form";
 import Row1 from "./Row1";
 import Row2 from "./Row2";
@@ -8,6 +6,8 @@ import Row3 from "./Row3";
 import Cloudy from "./images/03d.png";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
+import "./index.css";
+import "./App.css";
 
 export default function App({ city }) {
   return (
