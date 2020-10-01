@@ -1,0 +1,89 @@
+.CurrentWeather h2 {
+  color: #231816;
+  font-weight: 500;
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.CurrentWeather .location,
+.CurrentWeather .weather-stats {
+  text-align: right;
+}
+
+.CurrentWeather ul {
+  padding: 0;
+  list-style: none;
+  color: #bababa;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.CurrentWeather li strong {
+  color: #231816;
+}
+
+.CurrentWeather li:first-letter {
+  text-transform: capitalize;
+}
+
+.CurrentWeather .location {
+  text-align: right;
+}
+
+.CurrentWeather .date-country-row {
+  height: 50px;
+}
+
+.CurrentWeather h1 {
+  color: #231816;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.CurrentWeather button {
+  background: none;
+  border: none;
+  padding: 0 3px;
+  color: #047bff;
+  transition: all 150ms ease;
+  font-weight: 600;
+}
+
+.CurrentWeather button:hover {
+  color: #231816;
+  text-decoration: none;
+}
+
+.CurrentWeather .units {
+  position: relative;
+  top: -24px;
+  left: -5px;
+  color: #231816;
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.CurrentWeather .active {
+  color: #231816;
+  cursor: default;
+}
+
+.CurrentWeather .active:hover {
+  text-decoration: none;
+}
+
+.CurrentWeather .today-img-div {
+  height: 0;
+}
+
+.CurrentWeather .today-img {
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -50px;
+  bottom: 42px;
+}

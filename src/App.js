@@ -1,8 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import Row1 from "./Row1";
-import Row2 from "./Row2";
-import Row3 from "./Row3";
+import CurrentWeather from "./CurrentWeather";
 import Cloudy from "./images/03d.png";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
@@ -16,20 +14,7 @@ export default function App({ city }) {
         <div className="card">
           <div className="card-body">
             <Form />
-            <Row1 city="Glasgow" />
-            <Row2
-              date="Sunday"
-              time="00:00"
-              description="Scattered clouds"
-              country="GB"
-            />
-            <Row3
-              temperature={17}
-              humidity={80}
-              wind={9}
-              imgSrc={Cloudy}
-              imgAlt="Scattered Clouds"
-            />
+            <CurrentWeather city="Glasgow" />
             <hr className="hr-1" />
             <Forecast
               day="Mon"
