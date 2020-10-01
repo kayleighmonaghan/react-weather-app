@@ -52,7 +52,7 @@ export default function CurrentWeather({ city }) {
             </div>
             <div className="col-2 today-img-div">
               <img
-                src="./images/01d.png"
+                src="images/01d.png"
                 alt={weatherData.description}
                 className="today-img"
               />
