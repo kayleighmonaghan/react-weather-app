@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./CurrentWeather.css";
+import Cloudy from "./images/03d.png";
 
 export default function CurrentWeather({ city }) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -52,7 +53,7 @@ export default function CurrentWeather({ city }) {
             </div>
             <div className="col-2 today-img-div">
               <img
-                src="images/01d.png"
+                src={Cloudy}
                 alt={weatherData.description}
                 className="today-img"
               />
