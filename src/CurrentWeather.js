@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 import "./CurrentWeather.css";
 import Cloudy from "./images/03d.png";
 
-export default function CurrentWeather({ city }) {
+export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleSubmit(response) {
@@ -13,7 +14,7 @@ export default function CurrentWeather({ city }) {
       wind: Math.round(response.data.wind.speed),
       description: response.data.weather[0].description,
       country: "GB",
-      lastUpdated: "Tuesday 2:00",
+      date: new Date(response.data.dt * 1000),
       ready: true,
     });
   }
@@ -26,13 +27,15 @@ export default function CurrentWeather({ city }) {
             <h2>Today</h2>
           </div>
           <div className="col-7 location">
-            <h2 className="city">{city}</h2>
+            <h2 className="city">{props.city}</h2>
           </div>
         </div>
         <div className="row date-country-row">
           <div className="col-6 date">
             <ul>
-              <li>Last updated: {weatherData.lastUpdated}</li>
+              <li>
+                Last updated: <FormatDate date={weatherData.date} />
+              </li>
               <li className="weather-description">{weatherData.description}</li>
             </ul>
           </div>
@@ -75,7 +78,7 @@ export default function CurrentWeather({ city }) {
   } else {
     const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
     let unit = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${unit}`;
     axios.get(apiUrl).then(handleSubmit);
     return "Loading...";
   }
