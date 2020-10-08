@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CurrentWeather from "./CurrentWeather";
 import Cloudy from "./images/03d.png";
 import Forecast from "./Forecast";
+import "./WeatherMaster.css";
 
 export default function WeatherMaster() {
   return (
