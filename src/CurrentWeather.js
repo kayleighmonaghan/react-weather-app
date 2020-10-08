@@ -3,14 +3,12 @@ import axios from "axios";
 import FormatDate from "./FormatDate";
 import "./CurrentWeather.css";
 import Cloudy from "./images/03d.png";
-import search from "./Form";
 
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleSubmit(response) {
     setWeatherData({
-      city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
@@ -29,7 +27,7 @@ export default function CurrentWeather(props) {
             <h2>Today</h2>
           </div>
           <div className="col-7 location">
-            <h2 className="city">{weatherData.city}</h2>
+            <h2 className="city">{props.city}</h2>
           </div>
         </div>
         <div className="row date-country-row">
@@ -78,7 +76,10 @@ export default function CurrentWeather(props) {
       </div>
     );
   } else {
+    const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
+    let unit = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${unit}`;
+    axios.get(apiUrl).then(handleSubmit);
     return "Loading...";
-    search();
   }
 }
