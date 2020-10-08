@@ -1,3 +1,8 @@
+import React, { useState } from "react";
+import CurrentWeather from "./CurrentWeather";
+import Cloudy from "./images/03d.png";
+import Forecast from "./Forecast";
+
 export default function WeatherMaster() {
   return (
     <div className="WeatherMaster">
@@ -64,8 +69,6 @@ export default function WeatherMaster() {
         minTemp={10}
         maxTemp={13}
       />
-      <hr className="hr-2" />
-      <Footer />
     </div>
   );
 }
