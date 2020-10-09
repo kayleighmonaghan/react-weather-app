@@ -1,24 +1,24 @@
-.WeatherMaster form {
+.Weather form {
   padding-bottom: 12px;
 }
-.WeatherMaster i {
+.Weather i {
   transition: all 150ms ease;
 }
-.WeatherMaster i:hover {
+.Weather i:hover {
   font-size: larger;
 }
-.WeatherMaster .form-row {
+.Weather .form-row {
   margin: 0;
 }
-.WeatherMaster .col-1 {
+.Weather .col-1 {
   padding: 0px;
   border: none;
 }
-.WeatherMaster .search-btn {
+.Weather .search-btn {
   color: #b2b2b2;
   margin-left: 10px;
 }
-.WeatherMaster .location-btn {
+.Weather .location-btn {
   color: #eb4336;
   margin-left: 10px;
 }

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Forecast from "./Forecast";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
-import "./WeatherMaster.css";
+import "./Weather.css";
 import Cloudy from "./images/03d.png";
 
-export default function WeatherMaster(props) {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
@@ -41,7 +41,7 @@ export default function WeatherMaster(props) {
 
   if(weatherData.ready) {
   return (
-    <div className="WeatherMaster">
+    <div className="Weather">
       <div className="Form">
         <form className="city-search-form" onSubmit={handleFormSubmit}>
           <div className="row form-row">
