@@ -19,7 +19,7 @@ export default function Weather(props) {
       wind: Math.round(response.data.wind.speed),
       description: response.data.weather[0].description,
       country: response.data.sys.country,
-      icon: response.data.main
+      icon: response.data.weather[0].icon
     });
   }
 

@@ -2,7 +2,6 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherInfo.css";
-import Cloudy from "./images/03d.png";
 
 export default function WeatherInfo(props) {
         return (
@@ -41,12 +40,7 @@ export default function WeatherInfo(props) {
             </h1>
           </div>
           <div className="col-2 today-img-div">
-              <WeatherIcon code={props.data.icon} alt={props.data.description} />
-            <img
-              src={Cloudy}
-              alt={props.data.description}
-              className="today-img"
-            />
+              <WeatherIcon code={props.data.icon} alt={props.data.description} className="today-img" />
           </div>
           <div className="col-5">
             <ul className="weather-stats">
