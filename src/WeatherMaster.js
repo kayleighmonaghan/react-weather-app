@@ -4,11 +4,21 @@ import Cloudy from "./images/03d.png";
 import Forecast from "./Forecast";
 import "./WeatherMaster.css";
 
-export default function WeatherMaster() {
+export default function WeatherMaster(props) {
+const [city, setCity] = useState(props.defaultCity);
+
+  function handleFormSubmit(event) {
+    event.preventDefault();
+  }
+
+  function handleCityInput(event) {
+    setCity(event.target.value);
+  }
+
   return (
     <div className="WeatherMaster">
       <div className="Form">
-        <form className="city-search-form">
+        <form className="city-search-form" onSubmit={handleFormSubmit}>
           <div className="row form-row">
             <input
               type="text"
@@ -16,6 +26,7 @@ export default function WeatherMaster() {
               placeholder="Search city..."
               autoFocus="on"
               autoComplete="off"
+              onChange={handleCityInput}
             />
             <button type="submit" className="form-control col-1 search-btn">
               <i className="fas fa-search"></i>
@@ -26,7 +37,7 @@ export default function WeatherMaster() {
           </div>
         </form>
       </div>
-      <CurrentWeather city="Glasgow" />
+      <CurrentWeather city={city} />
       <hr className="hr-1" />
       <Forecast
         day="Mon"

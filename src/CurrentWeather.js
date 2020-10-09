@@ -9,6 +9,7 @@ export default function CurrentWeather(props) {
 
   function handleSubmit(response) {
     setWeatherData({
+      city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
@@ -27,7 +28,7 @@ export default function CurrentWeather(props) {
             <h2>Today</h2>
           </div>
           <div className="col-7 location">
-            <h2 className="city">{props.city}</h2>
+            <h2 className="city">{weatherData.city}</h2>
           </div>
         </div>
         <div className="row date-country-row">

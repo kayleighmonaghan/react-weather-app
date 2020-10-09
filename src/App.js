@@ -10,7 +10,7 @@ export default function App() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <WeatherMaster />
+            <WeatherMaster defaultCity="Glasgow" />
             <hr className="hr-2" />
             <Footer />
           </div>
