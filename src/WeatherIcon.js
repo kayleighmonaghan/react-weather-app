@@ -6,12 +6,16 @@ import PartlyCloudyDay from "./images/02d.png";
 import PartlyCloudyNight from "./images/02n.png";
 import CloudyDay from "./images/03d.png";
 import CloudyNight from "./images/03n.png";
-import ShowerRain from "./images/09d.png";
+import ShowerRainDay from "./images/09d.png";
+import ShowerRainNight from "./images/09n.png";
 import RainDay from "./images/10d.png";
 import RainNight from "./images/10n.png";
-import Thunderstorm from "./images/11d.png";
-import Snow from "./images/13d.png";
-import Mist from "./images/50d.png";
+import ThunderstormDay from "./images/11d.png";
+import ThunderstormNight from "./images/11n.png";
+import SnowDay from "./images/13d.png";
+import SnowNight from "./images/13n.png";
+import MistDay from "./images/50d.png";
+import MistNight from "./images/50n.png";
 
 export default function WeatherIcon(props) {
     console.log(props.code);
@@ -24,13 +28,16 @@ export default function WeatherIcon(props) {
         "03n": CloudyNight,
         "04d": CloudyDay,
         "04n": CloudyNight,
-        "09d": ShowerRain,
-        "09n": ShowerRain,
+        "09d": ShowerRainDay,
+        "09n": ShowerRainNight,
         "10d": RainDay,
         "10n": RainNight,
-        "11d": Thunderstorm,
-        "13d": Snow,
-        "50d": Mist
+        "11d": ThunderstormDay,
+        "11n": ThunderstormNight,
+        "13d": SnowDay,
+        "13n": SnowNight,
+        "50d": MistDay,
+        "50n": MistNight
     }
 
     return (
