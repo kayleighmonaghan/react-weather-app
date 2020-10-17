@@ -1,19 +1,41 @@
 import React from "react";
-import "01d" from "./images/01d.png";
-import "01n" from "./images/01n.png";
-import "02d" from "./images/02d.png";
-import "02n" from "./images/02n.png";
-import "03d" from "./images/03d.png";
-import "03n" from "./images/03n.png";
-import "09d" from "./images/09d.png";
-import "10d" from "./images/10d.png";
-import "10n" from "./images/10n.png";
-import "11d" from "./images/11d.png";
-import "13d" from "./images/13d.png";
-import "50d" from "./images/50d.png";
+import "./WeatherIcon.css";
+import ClearDay from "./images/01d.png";
+import ClearNight from "./images/01n.png";
+import PartlyCloudyDay from "./images/02d.png";
+import PartlyCloudyNight from "./images/02n.png";
+import CloudyDay from "./images/03d.png";
+import CloudyNight from "./images/03n.png";
+import ShowerRain from "./images/09d.png";
+import RainDay from "./images/10d.png";
+import RainNight from "./images/10n.png";
+import Thunderstorm from "./images/11d.png";
+import Snow from "./images/13d.png";
+import Mist from "./images/50d.png";
 
 export default function WeatherIcon(props) {
-    let imgUrl = `./images/${props.icon}` 
+    console.log(props.code);
+    const codeMapping = {
+        "01d": ClearDay,
+        "01n": ClearNight,
+        "02d": PartlyCloudyDay,
+        "02n": PartlyCloudyNight,
+        "03d": CloudyDay,
+        "03n": CloudyNight,
+        "04d": CloudyDay,
+        "04n": CloudyNight,
+        "09d": ShowerRain,
+        "09n": ShowerRain,
+        "10d": RainDay,
+        "10n": RainNight,
+        "11d": Thunderstorm,
+        "13d": Snow,
+        "50d": Mist
+    }
 
-    return <img src={imgUrl} alt={props.alt} />
+    return (
+    <div className="WeatherIcon">
+        <img src={codeMapping[props.code]} alt={props.alt} />
+    </div>
+    );
 }
