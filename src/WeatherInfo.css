@@ -74,16 +74,3 @@
 .WeatherInfo .active:hover {
   text-decoration: none;
 }
-
-.WeatherInfo .today-img-div {
-  height: 0;
-}
-
-.WeatherInfo .today-img {
-  width: 140px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  left: -50px;
-  bottom: 42px;
-}
