@@ -66,46 +66,28 @@ export default function Weather(props) {
     <WeatherInfo data={weatherData} />
       <hr className="hr-1" />
       <Forecast
-        day="Mon"
-        imgSrc={Cloudy}
-        imgAlt="Cloudy"
-        minTemp={10}
-        maxTemp={13}
+        city = {weatherData.city}
+        hour = {0}
       />
       <Forecast
-        day="Tue"
-        imgSrc={Cloudy}
-        imgAlt="Cloudy"
-        minTemp={10}
-        maxTemp={13}
+        city = {weatherData.city}
+        hour = {1}
       />
       <Forecast
-        day="Wed"
-        imgSrc={Cloudy}
-        imgAlt="Cloudy"
-        minTemp={10}
-        maxTemp={13}
+        city = {weatherData.city}
+        hour = {2}
       />
       <Forecast
-        day="Thu"
-        imgSrc={Cloudy}
-        imgAlt="Cloudy"
-        minTemp={10}
-        maxTemp={13}
+        city = {weatherData.city}
+        hour = {3}
       />
       <Forecast
-        day="Fri"
-        imgSrc={Cloudy}
-        imgAlt="Cloudy"
-        minTemp={10}
-        maxTemp={13}
+        city = {weatherData.city}
+        hour = {4}
       />
       <Forecast
-        day="Sat"
-        imgSrc={Cloudy}
-        imgAlt="Cloudy"
-        minTemp={10}
-        maxTemp={13}
+        city = {weatherData.city}
+        hour = {5}
       />
     </div>
   );
