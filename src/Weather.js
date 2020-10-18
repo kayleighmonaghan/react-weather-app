@@ -3,7 +3,6 @@ import Forecast from "./Forecast";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
-import Cloudy from "./images/03d.png";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
