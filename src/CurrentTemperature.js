@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
+import "./CurrentTemperature.css";
 
 export default function CurrentTemperature(props) {
     const [unit, setUnit] = useState("metric");
