@@ -66,27 +66,6 @@ export default function Weather(props) {
       <hr className="hr-1" />
       <Forecast
         city = {weatherData.city}
-        hour = {0}
-      />
-      <Forecast
-        city = {weatherData.city}
-        hour = {1}
-      />
-      <Forecast
-        city = {weatherData.city}
-        hour = {2}
-      />
-      <Forecast
-        city = {weatherData.city}
-        hour = {3}
-      />
-      <Forecast
-        city = {weatherData.city}
-        hour = {4}
-      />
-      <Forecast
-        city = {weatherData.city}
-        hour = {5}
       />
     </div>
   );

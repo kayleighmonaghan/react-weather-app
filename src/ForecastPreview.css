@@ -1,32 +1,32 @@
-.Forecast {
+.ForecastPreview {
   padding-bottom: 10px;
 }
-.Forecast h3 {
+.ForecastPreview h3 {
   color: #bababa;
   margin-bottom: 0;
   font-size: 25px;
 }
 
-.Forecast .week-day {
+.ForecastPreview .week-day {
   padding-left: 25px;
   text-align: left;
 }
-.Forecast .week-temp {
+.ForecastPreview .week-temp {
   padding-right: 25px;
   text-align: right;
 }
-.Forecast .week-icon {
+.ForecastPreview .week-icon {
   position: relative;
   right: -67px;
 }
-.Forecast img {
+.ForecastPreview img {
   width: 50px;
   display: block;
   margin: 0 auto;
   bottom: 10px;
 }
 
-.Forecast h3 strong {
+.ForecastPreview h3 strong {
   font-weight: 500;
   color: #9b9b9b;
 }
