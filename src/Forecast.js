@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import ForecastPreview from "./ForecastPreview";
+import Loader from 'react-loader-spinner';
+import "./Forecast.css";
 
 export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
@@ -29,6 +31,10 @@ export default function Forecast(props) {
     let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=${units}`;
     axios.get(url).then(handleForecastResponse);
 
-    return null;
+    return (
+      <div className="Forecast">
+      <Loader type="ThreeDots" color="#BABABA" height={80} width={80} className="loader" />
+      </div>
+    );
   }
 }
