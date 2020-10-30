@@ -7,8 +7,8 @@
 <li>Has geolocation functionality to find the weather for the nearest city to your co-ordinates.</li>
 <li>Displays the 3-hour forecast for the next 18 hours with the forecasted high and low temperatures.</li>
 <li>Includes buttons to convert the Celsius (metric) temperature into Fahrenheit (imperial) and back for both the current temperature and forecast temperatures.</li>
-<li>Uses loader spinners found on <a href="https://www.npmjs.com/package/react-loader-spinner">npm</a>.</li>
-<li>Uses icons found on <a href="https://www.iconfinder.com/iconsets/weather-color-2">Iconfinder</a></li>
+<li>Loader spinners found on <a href="https://www.npmjs.com/package/react-loader-spinner">npm</a>.</li>
+<li>Icons found on <a href="https://www.iconfinder.com/iconsets/weather-color-2">Iconfinder</a>.</li>
 </ul>
 
 <p>View it <a href="https://km-react-weather.netlify.app/">here</a>.</p>
