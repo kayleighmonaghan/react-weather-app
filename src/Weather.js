@@ -9,7 +9,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
-  const units = "metric";
 
   function handleResponse(response) {
     setWeatherData({
@@ -36,7 +35,7 @@ export default function Weather(props) {
 
 
   function search() {
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -44,7 +43,7 @@ export default function Weather(props) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-  let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
   }
 
