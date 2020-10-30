@@ -1,5 +1,5 @@
 <h2>React Weather App</h2>
-<p>ReactJS weather app using API from Open Weather.</p>
+<p>ReactJS weather app using API from <a href="https://openweathermap.org/api">Open Weather</a>.</p>
 <ul>
 <li>Displays the current weather, temperature, humidity and wind speed in any of the 200,000 supported locations entered into the form.</li>
 <li>Has geolocation functionality to find the weather for the nearest city to your co-ordinates.</li>
