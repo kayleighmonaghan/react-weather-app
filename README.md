@@ -14,4 +14,4 @@
 <br />
 <p>Loading spinners found on <a href="https://www.npmjs.com/package/react-loader-spinner">npm</a>. Icons found on <a href="https://www.iconfinder.com/iconsets/weather-color-2">Iconfinder</a>.</p>
 <br />
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a>.</p>
