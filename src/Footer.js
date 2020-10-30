@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="Footer">
       <small>
         <a
-          href="https://github.com/kayleighmonaghan/Weather-App"
+          href="https://github.com/kayleighmonaghan/react-weather-app"
           rel="noopener noreferrer"
           target="_blank"
         >
