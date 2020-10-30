@@ -27,3 +27,9 @@
   margin-top: 20px;
   margin-bottom: 15px;
 }
+
+.Weather .loader {
+  padding-bottom: 10px;
+  text-align: center;
+  opacity: 50%;
+}
