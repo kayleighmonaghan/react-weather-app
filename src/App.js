@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./Weather";
+import WeatherMain from "./WeatherMain";
 import Footer from "./Footer";
 import "./index.css";
 import "./App.css";
@@ -10,7 +10,7 @@ export default function App() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <Weather defaultCity="Glasgow" />
+            <WeatherMain defaultCity="Glasgow" />
             <hr className="hr-2" />
             <Footer />
           </div>

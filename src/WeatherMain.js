@@ -3,9 +3,9 @@ import Forecast from "./Forecast";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import Loader from 'react-loader-spinner';
-import "./Weather.css";
+import "./WeatherMain.css";
 
-export default function Weather(props) {
+export default function WeatherMain(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
@@ -52,7 +52,7 @@ export default function Weather(props) {
 
   if(weatherData.ready) {
   return (
-    <div className="Weather">
+    <div className="WeatherMain">
       <div className="Form">
         <form className="city-search-form" onSubmit={handleFormSubmit}>
           <div className="row form-row">
@@ -83,7 +83,7 @@ export default function Weather(props) {
   } else {
     search();
     return (
-    <div className="Weather">
+    <div className="WeatherMain">
     <Loader type="ThreeDots" color="#BABABA" height={80} width={80} className="loader" />
     </div>
     );
