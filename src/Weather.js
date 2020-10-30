@@ -34,9 +34,27 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
-    let unit = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function retrievePosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let units = "metric";
+  let apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(handleResponse);
+
+  apiEndpoint = "https://api.openweathermap.org/data/2.5/forecast";
+  apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(handleResponse);
+  }
+
+  function getGeolocation() {
+    navigator.geolocation.getCurrentPosition(retrievePosition);
   }
 
   if(weatherData.ready) {
@@ -56,7 +74,7 @@ export default function Weather(props) {
             <button type="submit" className="form-control col-1 search-btn">
               <i className="fas fa-search"></i>
             </button>
-            <button type="button" className="form-control col-1 location-btn">
+            <button type="button" onClick={getGeolocation} className="form-control col-1 location-btn">
               <i className="fas fa-map-marker-alt"></i>
             </button>
           </div>
