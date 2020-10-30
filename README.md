@@ -11,8 +11,7 @@
 
 <p>View it <a href="https://km-react-weather.netlify.app/">here</a>.</p>
 <p>View the original Vanilla JS version <a href="https://github.com/kayleighmonaghan/Vanilla-Weather-App">here</a>.</p>
-
-<p>Loading spinners found on <a href="https://www.npmjs.com/package/react-loader-spinner">npm</a>.</p>
-<p>Icons found on <a href="https://www.iconfinder.com/iconsets/weather-color-2">Iconfinder</a>.</p>
+<br />
+<p>Loading spinners found on <a href="https://www.npmjs.com/package/react-loader-spinner">npm</a>. Icons found on <a href="https://www.iconfinder.com/iconsets/weather-color-2">Iconfinder</a>.</p>
 <br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
