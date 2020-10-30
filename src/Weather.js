@@ -47,10 +47,6 @@ export default function Weather(props) {
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(handleResponse);
-
-  apiEndpoint = "https://api.openweathermap.org/data/2.5/forecast";
-  apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(handleResponse);
   }
 
   function getGeolocation() {
