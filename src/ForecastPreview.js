@@ -13,6 +13,35 @@ export default function ForecastPreview(props) {
     }
   }
 
+  function celsius() {
+    let minTemp = Math.round(props.data.main.temp_min);
+    let maxTemp = Math.round(props.data.main.temp_max);
+
+    return (
+      <h3>
+          <span className="min-temp">{minTemp}</span>° |
+          <strong>
+            <span className="max-temp"> {maxTemp}</span>°
+          </strong>
+        </h3>
+    );
+  }
+
+  function fahrenheit() {
+    let minTemp = Math.round((props.data.main.temp_min * 9) / 5 + 32);
+    let maxTemp = Math.round((props.data.main.temp_max * 9) / 5 + 32);
+
+    return (
+      <h3>
+          <span className="min-temp">{minTemp}</span>° |
+          <strong>
+            <span className="max-temp"> {maxTemp}</span>°
+          </strong>
+        </h3>
+    );
+  }
+
+  if (props.units === "metric") {
     return (
     <div className="ForecastPreview row">
       <div className="col-4 week-day">
@@ -22,13 +51,23 @@ export default function ForecastPreview(props) {
         <WeatherIcon code={props.data.weather[0].icon} />
       </div>
       <div className="col-5 week-temp">
-        <h3>
-          <span className="min-temp">{Math.round(props.data.main.temp_min)}</span>° |
-          <strong>
-            <span className="max-temp"> {Math.round(props.data.main.temp_max)}</span>°
-          </strong>
-        </h3>
+        {celsius()}
       </div>
     </div>
     );
+  } else {
+    return (
+    <div className="ForecastPreview row">
+      <div className="col-4 week-day">
+        <h3 id="day-1">{time()}</h3>
+      </div>
+      <div className="col-3 week-icon">
+        <WeatherIcon code={props.data.weather[0].icon} />
+      </div>
+      <div className="col-5 week-temp">
+        {fahrenheit()}
+      </div>
+    </div>
+    );
+  }
 }

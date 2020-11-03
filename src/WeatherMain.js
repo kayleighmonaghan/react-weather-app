@@ -8,6 +8,7 @@ import "./WeatherMain.css";
 export default function WeatherMain(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [units, setUnits] = useState("metric");
   const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
 
   function handleResponse(response) {
@@ -73,10 +74,11 @@ export default function WeatherMain(props) {
           </div>
         </form>
       </div>
-    <WeatherInfo data={weatherData} />
+    <WeatherInfo data={weatherData} units={units} setUnits={setUnits} />
       <hr className="hr-1" />
       <Forecast
         city = {weatherData.city}
+        units = {units}
       />
     </div>
   );

@@ -32,7 +32,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="row">
           <div className="col-5 today-temp-div">
-          <CurrentTemperature celsius={props.data.temperature} />
+          <CurrentTemperature celsius={props.data.temperature} units={props.units} setUnits={props.setUnits} />
           </div>
           <div className="col-2 today-img-div">
               <WeatherIcon code={props.data.icon} alt={props.data.description} className="today-img" />

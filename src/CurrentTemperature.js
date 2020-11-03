@@ -2,23 +2,21 @@ import React, { useState } from "react";
 import "./CurrentTemperature.css";
 
 export default function CurrentTemperature(props) {
-    const [unit, setUnit] = useState("metric");
-
     function fahrenheit() {
         return Math.round((props.celsius * 9) / 5 + 32);
     }
 
     function showFahrenheit(event) {
         event.preventDefault();
-        setUnit("imperial");
+        props.setUnits("imperial");
     }
     
     function showCelsius(event) {
         event.preventDefault();
-        setUnit("metric");
+        props.setUnits("metric");
     }
 
-    if (unit === "metric") {
+    if (props.units === "metric") {
         return (
             <div className="CurrentTemperature">
             <h1>
