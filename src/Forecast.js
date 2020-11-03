@@ -7,13 +7,11 @@ import "./Forecast.css";
 export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
-  const [units, setUnits] = useState("metric");
   
   function handleForecastResponse(response) {
     setForecast(response.data);
     setLoaded(true);
   }
-  
   
   if (loaded && props.city === forecast.city.name) {
     return (   
@@ -28,7 +26,7 @@ export default function Forecast(props) {
     );
   } else {
     const apiKey = "f3691b18a7a9f34109b9d2f634be83aa";
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=${units}`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleForecastResponse);
 
     return (

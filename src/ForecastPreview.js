@@ -13,9 +13,9 @@ export default function ForecastPreview(props) {
     }
   }
 
-  function celsius() {
-    let minTemp = Math.round(props.data.main.temp_min);
-    let maxTemp = Math.round(props.data.main.temp_max);
+  function fahrenheit() {
+    let minTemp = Math.round((props.data.main.temp_min * 9) / 5 + 32);
+    let maxTemp = Math.round((props.data.main.temp_max * 9) / 5 + 32);
 
     return (
       <h3>
@@ -27,9 +27,9 @@ export default function ForecastPreview(props) {
     );
   }
 
-  function fahrenheit() {
-    let minTemp = Math.round((props.data.main.temp_min * 9) / 5 + 32);
-    let maxTemp = Math.round((props.data.main.temp_max * 9) / 5 + 32);
+  function celsius() {
+    let minTemp = Math.round(props.data.main.temp_min);
+    let maxTemp = Math.round(props.data.main.temp_max);
 
     return (
       <h3>

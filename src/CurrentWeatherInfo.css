@@ -1,4 +1,9 @@
-.WeatherInfo h2 {
+.CurrentWeatherInfo .location,
+.CurrentWeatherInfo .weather-stats {
+  text-align: right;
+}
+
+.CurrentWeatherInfo h2 {
   color: #231816;
   font-weight: 500;
   margin-bottom: 0;
@@ -8,12 +13,7 @@
   text-transform: uppercase;
 }
 
-.WeatherInfo .location,
-.WeatherInfo .weather-stats {
-  text-align: right;
-}
-
-.WeatherInfo ul {
+.CurrentWeatherInfo ul {
   padding: 0;
   list-style: none;
   color: #bababa;
@@ -21,18 +21,14 @@
   white-space: nowrap;
 }
 
-.WeatherInfo li strong {
+.CurrentWeatherInfo li strong {
   color: #231816;
 }
 
-.WeatherInfo li:first-letter {
+.CurrentWeatherInfo li:first-letter {
   text-transform: capitalize;
 }
 
-.WeatherInfo .location {
-  text-align: right;
-}
-
-.WeatherInfo .date-country-row {
+.CurrentWeatherInfo .date-country-row {
   height: 50px;
 }

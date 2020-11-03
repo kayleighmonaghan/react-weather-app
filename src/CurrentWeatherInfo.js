@@ -4,9 +4,9 @@ import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherInfo.css";
 
-export default function WeatherInfo(props) {
+export default function CurrentWeatherInfo(props) {
         return (
-      <div className="WeatherInfo">
+      <div className="CurrentWeatherInfo">
         <div className="row">
           <div className="col-5 today">
             <h2>Today</h2>

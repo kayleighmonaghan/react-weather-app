@@ -1,34 +1,34 @@
-.WeatherMain form {
+.Main form {
   padding-bottom: 12px;
 }
-.WeatherMain i {
+.Main i {
   transition: all 150ms ease;
 }
-.WeatherMain i:hover {
+.Main i:hover {
   font-size: larger;
 }
-.WeatherMain .form-row {
+.Main .form-row {
   margin: 0;
 }
-.WeatherMain .col-1 {
+.Main .col-1 {
   padding: 0px;
   border: none;
 }
-.WeatherMain .search-btn {
+.Main .search-btn {
   color: #b2b2b2;
   margin-left: 10px;
 }
-.WeatherMain .location-btn {
+.Main .location-btn {
   color: #eb4336;
   margin-left: 10px;
 }
 
-.WeatherMain .hr-1 {
+.Main .hr-1 {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-.WeatherMain .loader {
+.Main .loader {
   padding-bottom: 10px;
   text-align: center;
   opacity: 50%;

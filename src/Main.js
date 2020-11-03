@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Forecast from "./Forecast";
-import WeatherInfo from "./WeatherInfo";
+import CurrentWeatherInfo from "./CurrentWeatherInfo";
 import axios from "axios";
 import Loader from 'react-loader-spinner';
-import "./WeatherMain.css";
+import "./Main.css";
 
-export default function WeatherMain(props) {
+export default function Main(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   const [units, setUnits] = useState("metric");
@@ -53,7 +53,7 @@ export default function WeatherMain(props) {
 
   if(weatherData.ready) {
   return (
-    <div className="WeatherMain">
+    <div className="Main">
       <div className="Form">
         <form className="city-search-form" onSubmit={handleFormSubmit}>
           <div className="row form-row">
@@ -74,7 +74,7 @@ export default function WeatherMain(props) {
           </div>
         </form>
       </div>
-    <WeatherInfo data={weatherData} units={units} setUnits={setUnits} />
+    <CurrentWeatherInfo data={weatherData} units={units} setUnits={setUnits} />
       <hr className="hr-1" />
       <Forecast
         city = {weatherData.city}
