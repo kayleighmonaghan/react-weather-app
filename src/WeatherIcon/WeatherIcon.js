@@ -1,21 +1,21 @@
 import React from "react";
 import "./WeatherIcon.css";
-import ClearDay from "./images/01d.png";
-import ClearNight from "./images/01n.png";
-import PartlyCloudyDay from "./images/02d.png";
-import PartlyCloudyNight from "./images/02n.png";
-import CloudyDay from "./images/03d.png";
-import CloudyNight from "./images/03n.png";
-import ShowerRainDay from "./images/09d.png";
-import ShowerRainNight from "./images/09n.png";
-import RainDay from "./images/10d.png";
-import RainNight from "./images/10n.png";
-import ThunderstormDay from "./images/11d.png";
-import ThunderstormNight from "./images/11n.png";
-import SnowDay from "./images/13d.png";
-import SnowNight from "./images/13n.png";
-import MistDay from "./images/50d.png";
-import MistNight from "./images/50n.png";
+import ClearDay from "../images/01d.png";
+import ClearNight from "../images/01n.png";
+import PartlyCloudyDay from "../images/02d.png";
+import PartlyCloudyNight from "../images/02n.png";
+import CloudyDay from "../images/03d.png";
+import CloudyNight from "../images/03n.png";
+import ShowerRainDay from "../images/09d.png";
+import ShowerRainNight from "../images/09n.png";
+import RainDay from "../images/10d.png";
+import RainNight from "../images/10n.png";
+import ThunderstormDay from "../images/11d.png";
+import ThunderstormNight from "../images/11n.png";
+import SnowDay from "../images/13d.png";
+import SnowNight from "../images/13n.png";
+import MistDay from "../images/50d.png";
+import MistNight from "../images/50n.png";
 
 export default function WeatherIcon(props) {
     console.log(props.code);

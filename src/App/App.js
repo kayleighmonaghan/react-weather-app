@@ -1,7 +1,6 @@
 import React from "react";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
-import "./index.css";
 import "./App.css";
 
 export default function App() {

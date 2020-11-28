@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ForecastPreview from "./ForecastPreview";
+import ForecastPreview from "../ForecastPreview/ForecastPreview";
 import Loader from 'react-loader-spinner';
 import "./Forecast.css";
 
