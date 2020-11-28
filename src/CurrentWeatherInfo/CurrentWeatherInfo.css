@@ -5,7 +5,6 @@
 
 .CurrentWeatherInfo h2 {
   color: #231816;
-  font-weight: 500;
   margin-bottom: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -14,6 +13,7 @@
 }
 
 .CurrentWeatherInfo ul {
+  font-family: "Rubik", sans-serif;
   padding: 0;
   list-style: none;
   color: #bababa;
@@ -23,6 +23,7 @@
 
 .CurrentWeatherInfo li strong {
   color: #231816;
+  font-family: "Rubik-Medium", sans-serif;
 }
 
 .CurrentWeatherInfo li:first-letter {

@@ -1,5 +1,6 @@
 .Main form {
   padding-bottom: 12px;
+  font-family: "Rubik", sans-serif;
 }
 .Main i {
   transition: all 150ms ease;

@@ -1,6 +1,6 @@
 .Footer small {
   padding-top: 12px;
-  font-weight: lighter;
+  font-family: "Rubik-Light", sans-serif;
 }
 .Footer a:hover {
   color: #231816;
