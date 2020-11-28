@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Forecast from "./Forecast";
-import CurrentWeatherInfo from "./CurrentWeatherInfo";
+import Forecast from "../Forecast/Forecast";
+import CurrentWeatherInfo from "../CurrentWeatherInfo/CurrentWeatherInfo";
 import axios from "axios";
 import Loader from 'react-loader-spinner';
 import "./Main.css";

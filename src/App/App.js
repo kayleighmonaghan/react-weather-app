@@ -1,6 +1,6 @@
 import React from "react";
-import Main from "./Main";
-import Footer from "./Footer";
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
 import "./index.css";
 import "./App.css";
 
