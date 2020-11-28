@@ -1,3 +1,8 @@
+.Main .loader {
+  text-align: center;
+  padding-bottom: 10px;
+  opacity: 50%;
+}
 .Main form {
   padding-bottom: 12px;
   font-family: "Rubik", sans-serif;
@@ -27,10 +32,4 @@
 .Main .hr-1 {
   margin-top: 20px;
   margin-bottom: 15px;
-}
-
-.Main .loader {
-  padding-bottom: 10px;
-  text-align: center;
-  opacity: 50%;
 }
