@@ -5,6 +5,7 @@
   color: #bababa;
   margin-bottom: 0;
   font-size: 25px;
+  font-weight: 500;
 }
 
 .ForecastPreview .week-day {
@@ -27,6 +28,6 @@
 }
 
 .ForecastPreview h3 strong {
-  font-weight: 500;
+  font-weight: 600;
   color: #9b9b9b;
 }

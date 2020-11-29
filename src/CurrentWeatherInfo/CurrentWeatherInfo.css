@@ -10,10 +10,10 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .CurrentWeatherInfo ul {
-  font-family: "Rubik", sans-serif;
   padding: 0;
   list-style: none;
   color: #bababa;
@@ -22,8 +22,8 @@
 }
 
 .CurrentWeatherInfo li strong {
+  font-weight: 600;
   color: #231816;
-  font-family: "Rubik-Medium", sans-serif;
 }
 
 .CurrentWeatherInfo li:first-letter {
