@@ -22,6 +22,8 @@ export default function Forecast(props) {
         <ForecastPreview data={forecast.list[3]} units={props.units} />
         <ForecastPreview data={forecast.list[4]} units={props.units} />
         <ForecastPreview data={forecast.list[5]} units={props.units} />
+        <ForecastPreview data={forecast.list[6]} units={props.units} />
+        <ForecastPreview data={forecast.list[7]} units={props.units} />
       </div>
     );
   } else {
