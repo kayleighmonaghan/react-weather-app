@@ -6,9 +6,6 @@
 .CurrentWeatherInfo h2 {
   color: #231816;
   margin-bottom: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -18,7 +15,6 @@
   list-style: none;
   color: #bababa;
   font-size: 15px;
-  white-space: nowrap;
 }
 
 .CurrentWeatherInfo li strong {

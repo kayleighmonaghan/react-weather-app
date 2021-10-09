@@ -1,6 +1,9 @@
 .App .container {
   display: flex;
   margin: 10px auto auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .App .card {
