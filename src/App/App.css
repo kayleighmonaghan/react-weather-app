@@ -1,5 +1,6 @@
 .App .container {
-  margin-top: 10px;
+  display: flex;
+  margin: 10px auto auto;
 }
 
 .App .card {
